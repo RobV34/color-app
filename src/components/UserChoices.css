@@ -1,0 +1,10 @@
+#UserChoices-box{
+    width: 100%;
+    height: 800px; 
+    /* background-color: yellow; */
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center; 
+}

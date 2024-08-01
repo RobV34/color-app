@@ -1,0 +1,26 @@
+#ChoiceBox-box{
+    margin: 20px; 
+    min-width: 27.5%; 
+}
+
+#ChoiceBox-box h1{
+    background-color: yellow;
+    padding: 20px; 
+    text-align: center;
+}
+
+#ChoiceBox-box h2, h4{
+    padding-left: 20px; 
+    padding-right: 20px; 
+}
+
+#ChoiceBox-box h4{
+    font-weight: 400;
+}
+
+.ChoiceBox-userOptionList{
+    padding: 20px; 
+    height: 300px; 
+
+    
+}
