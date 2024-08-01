@@ -20,7 +20,10 @@
 
 .ChoiceBox-userOptionList{
     padding: 20px; 
-    height: 300px; 
+    height: 300px;  
+}
 
-    
+.ChoiceBox-eachOption{
+    font-size: 20px;
+    line-height: 170%;
 }
