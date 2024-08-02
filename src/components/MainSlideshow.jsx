@@ -10,7 +10,6 @@ const MainSlideshow = ({images, duration}) => {
     slideshow: {
       position: 'relative',
       overflow: 'hidden',
-      marginTop: '40px',
       width: '100%',
       height: '550px' 
   

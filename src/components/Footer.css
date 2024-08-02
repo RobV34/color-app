@@ -1,6 +1,19 @@
 #Footer-box{
-    width: 100%;
-    height: 100px;
-    background-color: pink;
-    margin-top: 24px; 
+    max-width: 100%;
+    height: 100px; 
+    background-color: rgb(243, 238, 238);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between; 
+    padding-left: 5%;
+    padding-right: 5%; 
+}
+
+#Footer-box ul{
+list-style: none; 
+}
+
+#Footer-box li{
+    line-height: 170%;
 }

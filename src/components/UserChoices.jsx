@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 import ChoiceBox from './ChoiceBox';
 import './UserChoices.css'; 
@@ -30,12 +31,15 @@ const UserChoices = () => {
     setSelectedStyle(parseInt(e.target.value));
   };
 
+  const navigate = useNavigate();
+
   const fetchColor = async () => {
     setLoading(true);
     try {
       const url = `http://localhost:8080/generateUserColor?userVibeListOfId=${selectedVibes.join(',')}&userSpaceId=${selectedSpace}&userStyleId=${selectedStyle}`;
       const response = await axios.get(url);
-      setColor(response.data);
+      const color = response.data;
+      navigate('/userChosenColor', { state: { color } });
     } catch (error) {
       console.error("Error: ", error);
     } finally {
@@ -94,16 +98,6 @@ const UserChoices = () => {
       Find Your Color! 
     </button>
 
-    {color && (
-        <div id="color-details">
-          <h3>Color Details:</h3>
-          <p><strong>ID:</strong> {color.id}</p>
-          <p><strong>Name:</strong> {color.name}</p>
-          <p><strong>Hex Number:</strong> {color.hexNumber}</p>
-          <p><strong>Space:</strong> {color.space?.spaceName}</p>
-          <p><strong>Style:</strong> {color.style?.styleName}</p>
-        </div>
-      )}
 
     </div>
   
