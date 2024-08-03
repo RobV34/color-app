@@ -1,24 +1,35 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'; 
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 import './InspirationSlideshowImage.css'; 
 
-const InspirationSlideshowImage = ({colors, duration}) => {
+const InspirationSlideshowImage = ({colors, hexNumberLink, hexNumber}) => {
 
-  console.log(colors); 
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
-  const [backgroundColorIndex, setBackgroundColorIndex] = useState(0); 
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setBackgroundColorIndex((prevIndex) => (prevIndex + 1) % colors.length); 
-    }, duration); 
-
-    return () => clearInterval(interval); 
-  }, [colors, duration]); 
+  const fetchColor = async () => {
+    setLoading(true);
+    try {
+      const url = hexNumberLink;
+      const response = await axios.get(url);
+      const color = response.data;
+      navigate('/userChosenColor', { state: { color } });
+    } catch (error) {
+      console.error("Error: ", error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
-    <div id='InspirationSlideshowImage-Properties' style={{ backgroundColor: colors[backgroundColorIndex] }}></div>
+    <div id='InspirationSlideshowBox-Properties' style={{backgroundColor: colors}}>
+      <h3 onClick={fetchColor}>{hexNumber}</h3>
+    </div>
   )
 }
+
+  
 
 export default InspirationSlideshowImage

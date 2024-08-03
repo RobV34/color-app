@@ -43,3 +43,8 @@
     font-weight: 600;
 
 }
+
+#NavBar-Box button:hover {
+background-color: #51a6a6;
+    cursor: pointer;
+}

@@ -12,6 +12,8 @@
 #ChoiceBox-box h2, h4{
     padding-left: 20px; 
     padding-right: 20px; 
+    margin-bottom: 5px; 
+    margin-top: 5px; 
 }
 
 #ChoiceBox-box h4{

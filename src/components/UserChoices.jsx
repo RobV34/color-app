@@ -49,6 +49,7 @@ const UserChoices = () => {
 
   return (
     <div id='Userchoices-boxAndButton'>
+      <h3>Color Generator: </h3>
     <div id="UserChoices-box">
     
     <ChoiceBox 
