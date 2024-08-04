@@ -46,15 +46,26 @@
 }
 
 #userFormDiv{
-    height: 250px; 
-    background-color: rgb(222, 219, 219);
+    height: 300px; 
+    background-color: rgb(246, 241, 241);
     margin-top: 20px; 
     margin-bottom: 20px; 
     border-radius: 20px;
-    width: 50%; 
+    width: 60%; 
     align-self: center;
 
 }
+
+#userFormDiv label{
+   margin-top: 10px;
+   margin-bottom: 5px;
+}
+
+#userFormDiv input{
+    padding: 5px; 
+    border-radius: 20px;
+    border: none;
+ }
 
 #userFormDiv form{
     display: flex;
