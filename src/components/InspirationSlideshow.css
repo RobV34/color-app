@@ -1,6 +1,23 @@
 #InspirationSlideshow-box{
     width: 100%;
-    height: 400px; 
-    background-color: green;
-    margin-top: 24px;
+    height: 500px; 
+    margin-top: 12px;
+    margin-bottom: 24px; 
+    padding: 20px 0px; 
+    background-color: rgb(234, 231, 231);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#InspirationSlideshow-main h2{
+    margin-left: 4%;
+    margin-right: 4%; 
+    margin-top: 150px; 
+    border-bottom: rgb(243, 238, 238) solid 2px; 
+}
+
+#InspirationSlideshow-main span{
+    color: #F25C05;
 }
