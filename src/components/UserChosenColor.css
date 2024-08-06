@@ -90,18 +90,3 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
-.h2PromotionStyle {
-    color: inherit; 
-    border-top: inherit; 
-    padding: 10px;
-    max-width: 80%;
-    margin-top: 40px;
-    text-decoration: none;
-    transition: color 0.3s ease, border-color 0.3s ease;
-  }
-  
-  .h2PromotionStyle:hover {
-    color: #ffffff !important; 
-    border-top-color: #ffffff !important;
-  }

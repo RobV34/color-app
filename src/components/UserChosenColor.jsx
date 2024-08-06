@@ -48,13 +48,13 @@ const UserChosenColor = () => {
 
     switch (color.space.id) {
       case 1: 
-        userSpaceMessage = "Check out office supplies on sale"; 
+        userSpaceMessage = "Check out office supplies on sale: "; 
         break;
       case 2: 
-        userSpaceMessage = "Check out top trending kitchen gadgets"; 
+        userSpaceMessage = "Check out top trending kitchen gadgets: "; 
         break; 
       case 3: 
-        userSpaceMessage = "Must-haves for your new bathroom"; 
+        userSpaceMessage = "Must-haves for your new bathroom: "; 
         break; 
       default:
         break;
@@ -77,7 +77,7 @@ const UserChosenColor = () => {
     })
     .then(response => {
         alert('Form submitted successfully!');
-        setShowForm(false); 
+        setShowForm(false); // Hide the form
     })
     .catch(error => {
         alert('Error submitting form.');
@@ -87,11 +87,13 @@ const UserChosenColor = () => {
 
 
 
-const h2PromotionStyle = {
-  color: chooseSpaceFontColor(color.hexNumber),
-  borderTop: `2px solid ${chooseSpaceFontColor(color.hexNumber)}`,
-};
-
+    const h2PromotionStyle = {
+      color: chooseSpaceFontColor(color.hexNumber), 
+      borderTop: `2px solid ${chooseSpaceFontColor(color.hexNumber)}`, 
+      padding: '10px', 
+      maxWidth: '80%', 
+      marginLeft: '10%',
+      marginTop: '40px'}
 
 
   return (
@@ -102,9 +104,7 @@ const h2PromotionStyle = {
       
       <h3> {vibeNames} </h3>
 
-      <h2>
-      <a className="h2PromotionStyle" style={h2PromotionStyle} href={color.space.promotion.url}>{userSpaceMessage} </a>   
-      </h2>
+      <h2 style={h2PromotionStyle}>{userSpaceMessage}</h2>
 
       <button onClick={displayUserPostForm}>
             Send this color to your email!
