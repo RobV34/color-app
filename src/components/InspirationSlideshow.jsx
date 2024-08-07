@@ -18,7 +18,7 @@ const InspirationSlideshow = () => {
 
       <InspirationSlideshowImage 
       colors = {backgroundColors[0]}
-      hexNumberLink={`http://localhost:8080/color/1`}
+      hexNumberLink={`http://localhost:8080/color/2`}
       hexNumber={backgroundColors[0]} />
 
       <InspirationSlideshowBox 
@@ -26,7 +26,7 @@ const InspirationSlideshow = () => {
 
       <InspirationSlideshowImage 
       colors = {backgroundColors[1]}
-      hexNumberLink={`http://localhost:8080/color/2`}
+      hexNumberLink={`http://localhost:8080/color/1`}
       hexNumber={backgroundColors[1]}  />
 
       <InspirationSlideshowBox
