@@ -48,13 +48,13 @@ const UserChosenColor = () => {
 
     switch (color.space.id) {
       case 1: 
-        userSpaceMessage = "Check out office supplies on sale"; 
+        userSpaceMessage = "Check out top trending kitchen gadgets"; 
         break;
       case 2: 
-        userSpaceMessage = "Check out top trending kitchen gadgets"; 
+        userSpaceMessage = "Must-haves for your new bathroom"; 
         break; 
       case 3: 
-        userSpaceMessage = "Must-haves for your new bathroom"; 
+        userSpaceMessage = "Top deals on living room furniture"; 
         break; 
       default:
         break;
