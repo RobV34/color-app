@@ -56,44 +56,16 @@ const UserChoices = () => {
     stepNumber="1"
     heading="Vibe"
     userOptions={[
-      { "id": 1, "name": "edgy" },
-{ "id": 2, "name": "earthy" },
-{ "id": 3, "name": "bold" },
-{ "id": 4, "name": "loud" },
-{ "id": 5, "name": "sunny" },
-{ "id": 6, "name": "natural" },
-{ "id": 7, "name": "fresh" },
-{ "id": 8, "name": "rich" },
-{ "id": 9, "name": "deep" },
-{ "id": 10, "name": "stylish" },
-{ "id": 11, "name": "soft" },
-{ "id": 12, "name": "cool" },
-{ "id": 13, "name": "royal" },
-{ "id": 14, "name": "girly" },
-{ "id": 15, "name": "flirty" },
-{ "id": 16, "name": "intimidating" },
-{ "id": 17, "name": "inviting" },
-{ "id": 18, "name": "luxurious" },
-{ "id": 19, "name": "calm" },
-{ "id": 20, "name": "sophisticated" },
-{ "id": 21, "name": "simple" },
-{ "id": 22, "name": "gloomy" },
-{ "id": 23, "name": "lively" },
-{ "id": 24, "name": "rustic" },
-{ "id": 25, "name": "stylish" },
-{ "id": 26, "name": "muddy" },
-{ "id": 27, "name": "drab" },
-{ "id": 28, "name": "cheerful" },
-{ "id": 29, "name": "autumnal" },
-{ "id": 30, "name": "plant-like" },
-{ "id": 31, "name": "watery" },
-{ "id": 32, "name": "hot" },
-{ "id": 33, "name": "dusty" },
-{ "id": 34, "name": "sandy" },
-{ "id": 35, "name": "strong" },
-{ "id": 36, "name": "creamy" },
-{ "id": 37, "name": "faded" },
-{ "id": 38, "name": "dull" }
+{ "id": 1, "name": "bold" },
+{ "id": 2, "name": "cheerful" },
+{ "id": 3, "name": "calm" },
+{ "id": 4, "name": "warm" },
+{ "id": 5, "name": "relaxing" },
+{ "id": 6, "name": "vibrant" },
+{ "id": 7, "name": "cool" },
+{ "id": 8, "name": "energetic" },
+{ "id": 9, "name": "elegant" },
+{ "id": 10, "name": "sophisticated" }
     ]}
     colorUI="#F2B705"
     colorUIFaded="rgba(242, 183, 5, 0.1)"
@@ -104,11 +76,9 @@ const UserChoices = () => {
     stepNumber="2"
     heading="Space"
     userOptions={[
-      { id: 1, name: "office" },
-      { id: 2, name: "kitchen" },
-      { id: 3, name: "bathroom" },
-      { id: 4, name: "living room" },
-      { id: 5, name: "bedroom" }
+      { id: 1, name: "kitchen" },
+      { id: 2, name: "bathroom" },
+      { id: 3, name: "living room" },
     ]}
     colorUI="#F29F05"
     colorUIFaded="rgba(242, 159, 5, 0.1)" 
@@ -119,11 +89,9 @@ const UserChoices = () => {
     stepNumber="3"
     heading="Style"
     userOptions={[
-      { id: 1, name: "neutral" },
+      { id: 1, name: "warm" },
       { id: 2, name: "cool" },
-      { id: 3, name: "warm" },
-      { id: 4, name: "metallic" },
-      { id: 5, name: "neon" }
+      { id: 3, name: "neutral" }
     ]}
     colorUI="#F27F1B"
     colorUIFaded="rgba(242, 127, 27, 0.1)"
